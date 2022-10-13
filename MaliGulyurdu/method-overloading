@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+public class main {
+    public static void board(String name) {
+        System.out.println("Username is " + name);
+    }
+
+    public static void board(int score) {
+        System.out.println("Score is " + score);
+    }
+
+    public static void board(String name, int score) {
+        System.out.println(name+" has "+score+" score.");
+    }
+    public static void main(String[] args) {
+        // Overloading
+        System.out.println("OVERLOADING METHOD");
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter the username: ");
+        String name = scanner.next();
+
+        System.out.println("Enter the score: ");
+        int score = scanner.nextInt();
+
+        System.out.println("Choose a method:\n1)Only username\n2)Only score\n3)Both of them");
+        int chs = scanner.nextInt();
+
+        if(chs==1){
+            board(name);
+        }
+        if(chs==2){
+            board(score);
+        }
+        if(chs==3){
+            board(name,score);
+        }
+
+    }
+}
