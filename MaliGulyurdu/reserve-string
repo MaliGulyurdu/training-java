@@ -1,0 +1,12 @@
+import java.util.Scanner;
+
+public class mali {
+    public static void main(String[] args) {
+        // Mali - Reserve String Method
+        Scanner scanner = new Scanner(System.in);
+        String isim = scanner.next();
+
+        System.out.println(new StringBuilder(isim).reverse().toString());
+
+    }
+}
